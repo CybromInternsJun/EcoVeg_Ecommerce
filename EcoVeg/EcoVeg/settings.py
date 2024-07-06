@@ -133,6 +133,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
 
+CORS_ALLOW_METHODS_ALL=True
+
 CORS_ALLOW_METHODS = (
     "DELETE",
     "GET",

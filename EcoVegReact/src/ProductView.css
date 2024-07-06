@@ -1,0 +1,28 @@
+.ProductView{
+    height: 88vh;
+    width: 100%;
+    background-color: white;
+}
+.ProductView .Product{
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+}
+ .ProductView .Product .left{
+    height: 100%;
+    width: 45%;
+    background-color: beige;
+ }
+ .ProductView .Product .left img{
+    height: 100%;
+    width: 100%;
+
+ }
+
+ .ProductView .Product .right{
+    height: 100%;
+    width: 45%;
+    margin-left: 10%;
+    background-color: rgb(126, 188, 210);
+ }

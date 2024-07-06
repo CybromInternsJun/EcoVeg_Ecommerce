@@ -7,11 +7,10 @@ import "./App.css";
 
 
 const Signup = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [mobile, setMobile] = useState("")
-    const [password, setPassword] = useState("");
-    const [cpassword, setCpassword] = useState("");
+    const [Name, setName] = useState("");
+    const [Email, setEmail] = useState("");
+    const [Contact, setContact] = useState("")
+    const [Password, setPassword] = useState("");
     return (
         <div className="wrapper-login">
             <div className="login-box">
@@ -24,7 +23,7 @@ const Signup = () => {
                             id="username"
                             autoComplete="off"
                             onChange={(e) => setName(e.target.value)}
-                            value={name}
+                            value={Name}
                         />
                         <label htmlFor="username">Name</label>
                         <FaUserAlt className='icon' />
@@ -36,7 +35,7 @@ const Signup = () => {
                             id="username"
                             autoComplete="off"
                             onChange={(e) => setEmail(e.target.value)}
-                            value={email}
+                            value={Email}
                         />
                         <label htmlFor="username">Email</label>
                         <FaEnvelope className='icon' />
@@ -47,8 +46,8 @@ const Signup = () => {
                             className="form-control"
                             id="username"
                             autoComplete="off"
-                            onChange={(e) => setMobile(e.target.value)}
-                            value={mobile}
+                            onChange={(e) => setContact(e.target.value)}
+                            value={Contact}
                         />
                         <label htmlFor="username">Phone</label>
                         <FaPhone className='icon' />
@@ -60,7 +59,7 @@ const Signup = () => {
                             id="password"
                             autoComplete="off"
                             onChange={(e) => setPassword(e.target.value)}
-                            value={password}
+                            value={Password}
                         />
                         <label htmlFor="password">Password</label>
                         <FaLock className='icon' />

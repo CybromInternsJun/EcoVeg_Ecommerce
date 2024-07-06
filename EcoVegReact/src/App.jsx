@@ -10,6 +10,7 @@ import Footer from './Footer'
 import Login from './Login'
 import Signup from './Signup'
 import Offer from './Offer'
+import ProductView from './ProductView'
 function App() {
 
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path="/Test" element={<Test />}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
+          <Route path="/ProductView" element={<ProductView />} />
+
         </Routes>
       </Router>
       <Category />

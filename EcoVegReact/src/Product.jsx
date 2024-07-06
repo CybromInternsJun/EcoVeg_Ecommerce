@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FaHeart } from "react-icons/fa";
 import './Product.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,7 +24,7 @@ function Product() {
     <>
     <div className="wrapper-product">
     {items.map(i=>(
-    <div className="product">
+      <div className="product">
         <div className="product-img">
             <img src={i.P_Image} alt="" />
         </div>

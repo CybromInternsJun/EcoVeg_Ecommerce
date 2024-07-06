@@ -3,12 +3,20 @@ from rest_framework import permissions,viewsets
 from .models import Customer,Product,ProductCategory,Cart,Order
 from .serializers import CustomerSerializer,ProductSerializer,CategorySerializer,CartSerializer,OrderSerializer
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.decorators import action
+from rest_framework import renderers
+
+
 
 
 class CustomerViewSet(viewsets.ModelViewSet):
     queryset=Customer.objects.all()
     serializer_class=CustomerSerializer
-    permission_classes=[permissions.IsAuthenticated]
+
+
+
+   
 
 
 class ProductViewSet(viewsets.ModelViewSet):
