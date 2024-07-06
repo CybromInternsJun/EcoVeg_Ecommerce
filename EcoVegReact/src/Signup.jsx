@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaUserAlt, FaLock, FaFacebook, FaEnvelope } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { FaSquareXTwitter,FaPhone } from "react-icons/fa6";
-import "./App.css";
+import { FaSquareXTwitter, FaPhone } from "react-icons/fa6";
+import "./Sign.css";
 
 
 const Signup = () => {
@@ -68,17 +68,9 @@ const Signup = () => {
                     <div className='signup-link'>
                         <p>Already have an account? <Link to="/Login">Login</Link> </p>
                     </div>
-                    <div className='login-with'>
-                        <p>Or Sign with</p>
-                        <div className='social-icons'>
-                            <a href=""><FcGoogle className='social-icon' /></a>
-                            <a href=""><FaFacebook className='social-icon' /></a>
-                            <a href=""><FaSquareXTwitter className='social-icon' /></a>
-                        </div>
-                    </div>
                 </form>
             </div>
         </div>
     )
 }
-export default Signup
+export default Signup
