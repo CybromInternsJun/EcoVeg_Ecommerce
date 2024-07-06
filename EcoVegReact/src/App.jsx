@@ -11,6 +11,7 @@ import Login from './Login'
 import Signup from './Signup'
 import Offer from './Offer'
 import ProductView from './ProductView'
+import Services from './Services'
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
           <Route path="/ProductView" element={<ProductView />} />
+          <Route path="/Services" element={<Services/>}/>
 
         </Routes>
       </Router>

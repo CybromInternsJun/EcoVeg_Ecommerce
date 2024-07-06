@@ -18,7 +18,6 @@ function Nav() {
       console.error('There was an error fetching the data!', error);
     });
   },[])
-
   const OpenMenu = () => {
     var x = document.getElementById('menu');
     var y = document.getElementById('icon');
@@ -59,7 +58,7 @@ function Nav() {
           <ul>
             <Link to="/">Home</Link>
             <Link to="">About</Link>
-            <Link to="">Services</Link>
+            <Link to="/Service">Services</Link>
           </ul>
         </div>
         <div className="Login">
